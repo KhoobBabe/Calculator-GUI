@@ -1,0 +1,55 @@
+from tkinter import *
+
+#we make a window
+window = Tk()
+
+#a title is given 
+window.title("Calculator")
+
+#textbox is made
+entry = Entry(window, width=30, borderwidth=5)
+entry.grid(row=0, column=0, columnspan=5, sticky=E+W)
+
+#all the buttons are added
+but_1 = Button(window, text="0", height=2, width=7)
+but_1.grid(row=5, column=1)
+but_2 = Button(window, text="1", height=2, width=7)
+but_2.grid(row=4, column=1)
+but_3 = Button(window, text="2", height=2, width=7)
+but_3.grid(row=4, column=2)
+but_4 = Button(window, text="3", height=2, width=7)
+but_4.grid(row=4, column=3)
+but_5 = Button(window, text="4", height=2, width=7)
+but_5.grid(row=3, column=1)
+but_6 = Button(window, text="5", height=2, width=7)
+but_6.grid(row=3, column=2)
+but_7 = Button(window, text="6", height=2, width=7)
+but_7.grid(row=3, column=3)
+but_8 = Button(window, text="7", height=2, width=7)
+but_8.grid(row=2, column=1)
+but_9 = Button(window, text="8", height=2, width=7)
+but_9.grid(row=2, column=2)
+but_10 = Button(window, text="9", height=2, width=7)
+but_10.grid(row=2, column=3)
+but_11 = Button(window, text="+", height=2, width=7)
+but_11.grid(row=5, column=4)
+but_12 = Button(window, text="-", height=2, width=7)
+but_12.grid(row=4, column=4)
+but_13 = Button(window, text="*", height=2, width=7)
+but_13.grid(row=3, column=4)
+but_14= Button(window, text="/", height=2, width=7)
+but_14.grid(row=2, column=4)
+but_15 = Button(window, text=".", height=2, width=7)
+but_15.grid(row=5, column=2)
+but_16 = Button(window, text="=", height=2, width=7)
+but_16.grid(row=5, column=3)
+but_17 = Button(window, text="Close", height=2, width=7)
+but_17.grid(row=1, column=4)
+but_18 = Button(window, text="Cls", height=2, width=7)
+but_18.grid(row=1, column=1)
+but_19 = Button(window, text="Back", height=2, width=7)
+but_19.grid(row=1, column=2)
+but_20 = Button(window, text="  ", height=2, width=7)
+but_20.grid(row=1, column=3)
+
+window.mainloop()
